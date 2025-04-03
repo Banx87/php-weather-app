@@ -2,6 +2,7 @@
 	--bg-color: #4d4d4d;
 	--border-color: #fa8072;
 	--border-hover-color: #f8978c;
+	--font-color-white: #fff;
 
 	--sans-font: "Poppins" -apple-system, Roboto, BlinkMacSystemFont,
 		"Avenir Next", Avenir, "Nimbus Sans L", "Noto Sans", "Segoe UI", Arial,
@@ -32,15 +33,23 @@ body {
 	width: 35rem;
 	min-height: 60rem; /* Ensure the container maintains its height */
 	margin: auto; /* Center the container */
-	background-color: #fff;
 	border: 2px solid var(--border-color);
 	border-radius: 10px;
 	box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
 	background-color: rgba(69, 155, 226, 0.726);
 	background-size: cover;
-	background-position: bottom center;
+	background-position: 50% center;
 	overflow-y: auto; /* Allow vertical scrolling within the container */
 	overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	position: relative;
+	top: 0.4rem;
+	margin-right: 0.4rem;
+	filter: drop-shadow(0.1rem 0.1rem 0.05rem rgba(0, 0, 0, 0.5));
 }
 
 .top-bar {
@@ -48,18 +57,13 @@ body {
 	justify-content: space-between;
 	align-items: baseline;
 	padding: 2.5rem 3rem;
-	color: #fff;
+	color: var(--font-color-white);
 	font-size: 20px;
 }
 
-.top-bar_location {
-	.icon {
-		width: 1.5rem;
-		height: 1.5rem;
-		position: relative;
-		top: 0.4rem;
-		margin-right: 0.4rem;
-	}
+.top-bar_location,
+.top-bar_date {
+	text-shadow: 0.05rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 .top-bar_date {
@@ -73,6 +77,30 @@ body {
 	margin-block: 2rem;
 	margin-inline: auto;
 	filter: drop-shadow(0.5rem 0.6rem 1rem rgba(0, 0, 0, 0.5));
+}
+
+.weather-info_temperature {
+	text-align: center;
+	color: var(--font-color-white);
+	font-size: 7rem;
+	margin: 0;
+	max-height: 120px;
+	text-shadow: 0rem 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.weather-info_description {
+	position: relative;
+	font-size: 20px;
+	right: 0.8rem;
+	color: var(--font-color-white);
+	text-align: center;
+	margin: 0;
+	text-shadow: 0.05rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+
+	.icon {
+		margin-right: 2px;
+		color: transparent;
+	}
 }
 
 /* Custom scrollbar styling */
