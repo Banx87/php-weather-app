@@ -5,9 +5,38 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Weather App</title>
 	</head>
 	<body>
-		<div class="app-container"></div>
+		<div
+			class="app-container"
+			style="background-image: url('images/SVG/stormy/bg.svg')"
+		>
+			<div class="top-bar">
+				<div class="top-bar_location poppins-extralight">
+					<svg viewBox="0 0 52.7624 72.774" class="icon location_icon">
+						<path
+							d="m45.0353,7.7268h0c-10.3024-10.3024-27.0058-10.3024-37.3081,0h0C-1.2832,16.7371-2.5652,30.9001,4.6807,41.3819l21.7006,31.392,21.7006-31.392c7.2459-10.4818,5.9638-24.6448-3.0465-33.6551Zm-18.6541,32.3037c-7.5383,0-13.6492-6.111-13.6492-13.6492s6.111-13.6493,13.6492-13.6493,13.6492,6.111,13.6492,13.6493-6.111,13.6492-13.6492,13.6492Z"
+							style="fill: currentColor"
+						/></svg
+					>Los Angeles
+				</div>
+				<div class="top-bar_date poppins-regular">Monday, 25<sup>th</sup></div>
+			</div>
+			<div class="weather-info">
+				<img
+					src="images/SVG/stormy/large.svg"
+					class="weather-info-img"
+					alt="Stormy"
+				/>
+			</div>
+			<h1 class="weather-info_temperature poppins-light">32 &#8451;</h1>
+		</div>
 	</body>
 </html>
