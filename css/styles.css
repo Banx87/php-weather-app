@@ -1,0 +1,30 @@
+:root {
+	--bg-color: #4d4d4d;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background-color: var(--bg-color);
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%;
+}
+
+.app-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35rem;
+	height: 60rem;
+	background-color: #fff;
+	border: 2px solid #ec8282;
+	border-radius: 10px;
+	box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+}
