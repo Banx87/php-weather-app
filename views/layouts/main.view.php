@@ -16,7 +16,6 @@
 
 <body>
     <?php echo $contents; ?>
-
 </body>
 
 </html>
