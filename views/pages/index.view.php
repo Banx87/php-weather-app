@@ -12,7 +12,9 @@
                     style="fill: currentColor" />
             </svg><?php echo e($info->city); ?>
         </div>
-        <div class="top-bar_date poppins-regular">Monday, 25<sup>th</sup></div>
+        <div class="top-bar_date poppins-regular">
+            <?php echo date('l, j<\s\u\p>S</\s\u\p>'); ?>
+        </div>
     </div>
     <div class="weather-info">
         <img src="images/SVG/<?php echo e($weatherType) ?>/large.svg" class="weather-info-img"
