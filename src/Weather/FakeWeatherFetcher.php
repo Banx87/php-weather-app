@@ -1,7 +1,6 @@
 <?php
 
-use App\Weather\WeatherFetcherInterface;
-use App\Weather\WeatherInfo;
+namespace App\Weather;
 
 class FakeWeatherFetcher implements WeatherFetcherInterface
 {
