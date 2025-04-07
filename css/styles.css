@@ -88,6 +88,11 @@ body {
 	text-shadow: 0rem 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 
+.weather-info_temperature > span {
+	font-size: 0.6em;
+	vertical-align: middle;
+}
+
 .weather-info_description {
 	position: relative;
 	font-size: 20px;
