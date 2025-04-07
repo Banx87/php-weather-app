@@ -9,6 +9,11 @@ require __DIR__ . '/inc/all.inc.php';
 $fetcher = new RemoteWeatherFetcher();
 $info = $fetcher->fetch('Tampere, Finland');
 
+if (empty($info)) {
+	echo ('Weather info not found!');
+	exit;
+}
+
 render(
 	'index.view',
 	[

@@ -4,5 +4,5 @@ namespace App\Weather;
 
 interface WeatherFetcherInterface
 {
-    public function fetch(string $city): WeatherInfo;
+    public function fetch(string $city): ?WeatherInfo;
 }
