@@ -1,10 +1,10 @@
-<?php if (!empty($weather)) {
-    $weather = $weather;
+<?php if (!empty($weatherType)) {
+    $weatherType = $weatherType;
 } else {
-    $weather = 'sunny';
+    $weatherType = 'sunny';
 } ?>
 
-<div class="app-container" style="background-image: url('images/SVG/<?php echo e($weather) ?>/bg.svg')">
+<div class="app-container" style="background-image: url('images/SVG/<?php echo e($weatherType) ?>/bg.svg')">
     <div class="top-bar">
         <div class="top-bar_location poppins-extralight">
             <svg viewBox="0 0 52.7624 72.774" class="icon location_icon">
@@ -18,12 +18,12 @@
         </div>
     </div>
     <div class="weather-info">
-        <img src="images/SVG/<?php echo e($weather) ?>/large.svg" class="weather-info-img"
-            alt="<?php echo e($weather) ?>" />
+        <img src="images/SVG/<?php echo e($weatherType) ?>/large.svg" class="weather-info-img"
+            alt="<?php echo e($weatherType) ?>" />
     </div>
-    <h1 class="weather-info_temperature poppins-light"><?php echo e(($temperature_kelvin) - 273) ?>°</h1>
+    <h1 class="weather-info_temperature poppins-light"><?php echo e(($temperatureKelvin) - 273) ?>°</h1>
     <p class="weather-info_description poppins-extralight">
-        <?php echo file_get_contents(__DIR__ . '/../../images/SVG/icons/' . $weather . '.svg'); ?>
-        <?php echo $weather ?>
+        <?php echo file_get_contents(__DIR__ . '/../../images/SVG/icons/' . e($weatherType) . '.svg'); ?>
+        <?php echo e($weatherType) ?>
     </p>
 </div>
